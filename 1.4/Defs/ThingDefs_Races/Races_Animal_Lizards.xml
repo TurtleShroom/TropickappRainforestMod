@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- ====================================================== -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="TSP_CK_MiscAnimal_Base">
     <defName>CK_KomodoDragon</defName>
     <label>Komodo Dragon</label>
     <description>Also known as the monitor lizard, this is a large species of lizard found in Indonesian islands on old Earth. Komodo dragon group behaviour in hunting is exceptional in the reptile world./nAs a result of their size, these lizards dominated the ecosystems in which they lived. The diet of the Komodo dragon mainly consists of deer, though they also eat considerable amounts of carrion. Komodo dragons also occasionally attack humans.</description>
@@ -62,7 +62,7 @@
     <comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>CK_EggKomodoFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggFertilizationCountMax>2</eggFertilizationCountMax>
         <eggLayIntervalDays>20</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
@@ -77,11 +77,11 @@
       <body>QuadrupedAnimalWithClawsTailAndJowl</body>
       <baseBodySize>2</baseBodySize>
       <baseHealthScale>1.8</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
-      <leatherDef>CK_LeatherKomodoDragon</leatherDef>
+      <foodType>CarnivoreAnimal, Meat, Corpse, Kibble</foodType>
+      <leatherDef>Leather_Lizard</leatherDef>
       <!-- <leatherColor>(100,115,60)</leatherColor>
-      <leatherLabel>Komodo dragon skin</leatherLabel>
-      <leatherInsulation>0.50</leatherInsulation> -->
+		  <leatherLabel>Komodo dragon skin</leatherLabel>
+		  <leatherInsulation>0.50</leatherInsulation> -->
       <trainability>Intermediate</trainability>
       <wildness>0.8</wildness>
       <gestationPeriodDays>20</gestationPeriodDays>
@@ -115,6 +115,8 @@
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <wildBiomes>
+      </wildBiomes>
     </race>
     <tradeTags>
       <li>AnimalFighter</li>
