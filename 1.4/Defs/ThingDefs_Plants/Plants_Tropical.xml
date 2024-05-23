@@ -814,14 +814,16 @@
       <harvestYield>50</harvestYield>
       <harvestedThingDef>WoodLog</harvestedThingDef>
       <harvestMinGrowth>0</harvestMinGrowth>
-      <harvestAfterGrowth IsNull="True">
-      </harvestAfterGrowth>
+      <harvestAfterGrowth IsNull="True"></harvestAfterGrowth> <!-- So it won't inherit -->
       <sowTags Inherit="False">
       </sowTags>
       <!-- Cannot sow -->
       <neverBlightable>true</neverBlightable>
       <interferesWithRoof>false</interferesWithRoof>
       <canDeteriorate>true</canDeteriorate>
+      <burnedThingDef>BurnedTree</burnedThingDef>
+      <choppedThingDef>SmashedStump</choppedThingDef>
+      <smashedThingDef>SmashedStump</smashedThingDef>
       <wildBiomes Inherit="False">
         <!-- RimWorld.Core -->
         <!-- VANILLA RENDITION -->
