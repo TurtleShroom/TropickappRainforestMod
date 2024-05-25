@@ -302,8 +302,7 @@
       </sowResearchPrerequisites>
       <purpose>Food</purpose>
       <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-      <wildBiomes Inherit="False">
-      </wildBiomes>
+      <wildBiomes Inherit="False"></wildBiomes>
     </plant>
   </ThingDef>
 </Defs>
