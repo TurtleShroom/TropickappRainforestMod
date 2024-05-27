@@ -815,10 +815,8 @@
       <harvestYield>50</harvestYield>
       <harvestedThingDef>WoodLog</harvestedThingDef>
       <harvestMinGrowth>0</harvestMinGrowth>
-      <harvestAfterGrowth IsNull="True"></harvestAfterGrowth> <!-- So it won't inherit -->
-      <sowTags Inherit="False">
-      </sowTags>
-      <!-- Cannot sow -->
+      <harvestAfterGrowth IsNull="True" Inherit="False"></harvestAfterGrowth> <!-- So it won't inherit -->
+      <sowTags Inherit="False"></sowTags> <!-- Cannot sow -->
       <neverBlightable>true</neverBlightable>
       <interferesWithRoof>false</interferesWithRoof>
       <canDeteriorate>true</canDeteriorate>

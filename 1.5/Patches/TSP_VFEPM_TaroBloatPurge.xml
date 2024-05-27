@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
- 
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -21,13 +20,6 @@
         <li Class="PatchOperationInsert">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
-          <value>
-            <li>CK_RawTaro</li>
-          </value>
-        </li>
-        <li Class="PatchOperationInsert">
-          <success>Always</success>
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
             <li>CK_RawTaro</li>
           </value>

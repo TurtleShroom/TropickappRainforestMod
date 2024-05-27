@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
+  <!--
+  <ResearchProjectDef>
+    <defName></defName>
+    <label></label>
+    <description></description>
+    <baseCost></baseCost>
+    <techLevel></techLevel>
+  </ResearchProjectDef>
+  -->
+  <!--=============================== Tier 1: pre-electricity ===================================-->
   <ResearchProjectDef>
     <defName>CK_Beekeeping</defName>
     <label>beekeeping</label>
@@ -9,7 +20,9 @@
     <tags>
       <li>TribalStart</li>
     </tags>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>4.90</researchViewY>
+    <prerequisites>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
   </ResearchProjectDef>
 </Defs>
