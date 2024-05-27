@@ -501,10 +501,11 @@
   <ThingDef ParentName="TSP_CK_TropicalPlant_Base">
     <defName>CK_PlantRafflesia</defName>
     <label>rafflesia</label>
-    <description>Rafflesia (stinking corpse lily) is a parasitic flowering plant that gives off the smell of rotting flesh. It is the largest flower to have ever existed on Old Earth. By imitating a corpse, its smell attracts scavenger carrion-flies, by which it is pollinated. These characteristics make Rafflesia a plant to avoid. Its massive size makes passing it a brutal, putrid trudge through its gargantuan petals.</description>
+    <description>Rafflesia (literally, "stinking corpse lily") is a parasitic flowering plant that gives off the smell of rotting flesh. It is the largest flower to have ever existed on Old Earth. By imitating a corpse, its smell attracts scavenger carrion-flies, by which it is pollinated. These characteristics make Rafflesia a plant to avoid. Its massive size makes passing it a brutal, putrid trudge through its gargantuan petals. In an emergency, Pawns that eat meat can consume the insects on the rafflesia, but they will abhor it.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>-20</Beauty>
+	  <OutdoorBeauty>-20</OutdoorBeauty>
       <!-- OH GOSH THE SMELL -->
       <Cleanliness>-2</Cleanliness>
       <Nutrition>6</Nutrition>
@@ -518,10 +519,10 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
-    <hideAtSnowDepth>0.75</hideAtSnowDepth>
+    <hideAtSnowDepth>0.95</hideAtSnowDepth>
     <ingestible>
-      <foodType>Plant, Seed, Corpse</foodType>
-      <preferability>DesperateOnly</preferability>
+      <foodType>Plant, Corpse, CarnivoreAnimalStrict, CarnivoreAnimal</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
     </ingestible>
     <plant>
       <blockAdjacentSow>true</blockAdjacentSow>
@@ -600,8 +601,7 @@
       <fertilitySensitivity>0.3</fertilitySensitivity>
       <growDays>2.5</growDays>
       <sowWork>400</sowWork>
-      <sowTags Inherit="False">
-      </sowTags>
+      <sowTags Inherit="False"></sowTags>
       <!-- Sew the crop version instead -->
       <growMinGlow>0.3</growMinGlow>
       <maxMeshCount>4</maxMeshCount>
@@ -663,7 +663,8 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <statBases>
-      <Beauty>3</Beauty>
+      <Beauty>4</Beauty>
+	  <OutdoorBeauty>5</OutdoorBeauty>
     </statBases>
     <plant>
       <growDays>18</growDays>
