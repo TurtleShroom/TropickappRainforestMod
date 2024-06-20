@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
-  <!--
-  <ResearchProjectDef>
+  <!-- <ResearchProjectDef>
     <defName></defName>
     <label></label>
     <description></description>
     <baseCost></baseCost>
     <techLevel></techLevel>
-  </ResearchProjectDef>
-  -->
+  </ResearchProjectDef> -->
   <!--=============================== Tier 1: pre-electricity ===================================-->
   <ResearchProjectDef>
     <defName>CK_Beekeeping</defName>
@@ -23,6 +20,6 @@
     <prerequisites>
     </prerequisites>
     <researchViewX>0</researchViewX>
-    <researchViewY>6</researchViewY>
+    <researchViewY>9</researchViewY>
   </ResearchProjectDef>
 </Defs>

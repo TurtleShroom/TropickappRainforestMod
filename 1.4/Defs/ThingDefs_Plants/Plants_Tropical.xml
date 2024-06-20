@@ -783,8 +783,7 @@
     <defName>CK_PlantTreeTreeStump</defName>
     <label>sickly tree</label>
     <description>The broken remnants of a tree, barely clinging to life. Some shrubbery has grown around it. It grows very slowly and cannot be sown.</description>
-    <minifiedDef IsNull="True">
-    </minifiedDef>
+    <minifiedDef IsNull="True" Inherit="False"></minifiedDef>
     <graphicData>
       <texPath>Things/Plant/TreeSickly/TreeSickly</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -792,7 +791,7 @@
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <Beauty>0</Beauty>
-      <Flammability>3</Flammability>
+      <Flammability>0</Flammability>
       <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_AshResistance>
       <FoodPoisonChance>0.5</FoodPoisonChance>
       <FoodPoisonChanceFixedHuman>0.51</FoodPoisonChanceFixedHuman>
