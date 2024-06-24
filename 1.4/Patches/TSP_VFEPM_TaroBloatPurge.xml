@@ -14,35 +14,35 @@
           <success>Always</success>
           <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
-            <li>CK_RawTaro</li>
+            <li>CK_TaroRoot</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
-            <li>CK_RawTaro</li>
+            <li>CK_TaroRoot</li>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
-            <li>CK_RawTaro</li>
+            <li>CK_TaroRoot</li>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
-            <li>CK_RawTaro</li>
+            <li>CK_TaroRoot</li>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VCE_RawTaro"]</xpath>
           <value>
-            <li>CK_RawTaro</li>
+            <li>CK_TaroRoot</li>
           </value>
         </li>
         <li Class="PatchOperationRemove">
@@ -95,21 +95,21 @@
           <success>Always</success>
           <xpath>/Defs/RecipeDef/costList/VCE_RawTaro</xpath>
           <value>
-            <CK_RawTaro>25</CK_RawTaro>
+            <CK_TaroRoot>25</CK_TaroRoot>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/TerrainDef/costList/VCE_RawTaro</xpath>
           <value>
-            <CK_RawTaro>15</CK_RawTaro>
+            <CK_TaroRoot>15</CK_TaroRoot>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/RecipeDef/products/VCE_RawTaro</xpath>
           <value>
-            <CK_RawTaro>15</CK_RawTaro>
+            <CK_TaroRoot>15</CK_TaroRoot>
           </value>
         </li>
         <!--
@@ -172,7 +172,7 @@
 			<xpath>/Defs/ThingDef[defName="VCE_Taro"]/plant/harvestedThingDef</xpath>
 			<success>Always</success>
 			<value>
-				<harvestedThingDef>CK_RawTaro</harvestedThingDef>
+				<harvestedThingDef>CK_TaroRoot</harvestedThingDef>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
