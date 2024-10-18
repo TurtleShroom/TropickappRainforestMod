@@ -505,7 +505,7 @@
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>-20</Beauty>
-	  <OutdoorBeauty>-20</OutdoorBeauty>
+	  <BeautyOutdoors>-20</BeautyOutdoors>
       <!-- OH GOSH THE SMELL -->
       <Cleanliness>-2</Cleanliness>
       <Nutrition>6</Nutrition>
@@ -664,7 +664,7 @@
     </graphicData>
     <statBases>
       <Beauty>4</Beauty>
-	  <OutdoorBeauty>5</OutdoorBeauty>
+	  <BeautyOutdoors>5</BeautyOutdoors>
     </statBases>
     <plant>
       <growDays>18</growDays>
