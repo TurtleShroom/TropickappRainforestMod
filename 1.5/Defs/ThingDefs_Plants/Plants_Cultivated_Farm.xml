@@ -265,6 +265,9 @@
       <MaxHitPoints>1300</MaxHitPoints>
       <Beauty>0</Beauty>
       <Cleanliness>-1</Cleanliness>
+		<VV_MinGrowthPlantGatherable MayRequire="gguake.race.vivi">0.9</VV_MinGrowthPlantGatherable>
+		<VV_PlantGatherCooldown MayRequire="gguake.race.vivi">2</VV_PlantGatherCooldown>
+		<VV_PlantHoneyGatherYield MayRequire="gguake.race.vivi">2</VV_PlantHoneyGatherYield>
     </statBases>
     <plant>
       <sowMinSkill>7</sowMinSkill>
@@ -304,5 +307,8 @@
       <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
       <wildBiomes Inherit="False"></wildBiomes>
     </plant>
+	<comps Inherit="False">
+		<li Class="VVRace.CompProperties_RepeatGatherable" MayRequire="gguake.race.vivi"></li>
+	</comps>
   </ThingDef>
 </Defs>

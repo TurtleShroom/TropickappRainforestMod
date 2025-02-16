@@ -8,6 +8,9 @@
       <MarketValue>0</MarketValue>
       <Beauty>4</Beauty>
       <Nutrition>2</Nutrition>
+		<VV_MinGrowthPlantGatherable MayRequire="gguake.race.vivi">0.66</VV_MinGrowthPlantGatherable>
+		<VV_PlantGatherCooldown MayRequire="gguake.race.vivi">1</VV_PlantGatherCooldown>
+		<VV_PlantHoneyGatherYield MayRequire="gguake.race.vivi">0.9</VV_PlantHoneyGatherYield>
     </statBases>
     <ingestible>
       <preferability>DesperateOnly</preferability>
@@ -26,6 +29,9 @@
       </sowTags>
       <wildBiomes Inherit="False"></wildBiomes>
 	</plant>
+	<comps>
+		<li Class="VVRace.CompProperties_RepeatGatherable" MayRequire="gguake.race.vivi"></li>
+	</comps>
   </ThingDef>
   <ThingDef Name="TSP_CK_TropicalTree_Base" ParentName="TSP_CK_TropicalPlant_Base" Abstract="True">
     <pathCost>10</pathCost>

@@ -24,6 +24,9 @@
       <MaxHitPoints>1300</MaxHitPoints>
       <Beauty>-1</Beauty>
       <Nutrition>2</Nutrition>
+		<VV_MinGrowthPlantGatherable MayRequire="gguake.race.vivi">0.81</VV_MinGrowthPlantGatherable>
+		<VV_PlantGatherCooldown MayRequire="gguake.race.vivi">1.85</VV_PlantGatherCooldown>
+		<VV_PlantHoneyGatherYield MayRequire="gguake.race.vivi">3</VV_PlantHoneyGatherYield>
     </statBases>
     <ingestible>
       <foodType>AnimalProduct, Fluid, Plant</foodType>
@@ -36,7 +39,7 @@
       <harvestedThingDef>CK_Honeycomb</harvestedThingDef>
       <harvestYield>100</harvestYield>
       <!-- <harvestDestroys>false</harvestDestroys> -->
-      <harvestMinGrowth>0.80</harvestMinGrowth>
+      <harvestMinGrowth>0.8</harvestMinGrowth>
       <harvestFailable>false</harvestFailable>
       <harvestTag>Standard</harvestTag>
       <fertilityMin>0.01</fertilityMin>
@@ -190,6 +193,9 @@
         <Permafrost MayRequire="mlie.rfpermafrost">0.0001</Permafrost>
       </wildBiomes>
     </plant>
+	<comps Inherit="False">
+		<li Class="VVRace.CompProperties_RepeatGatherable" MayRequire="gguake.race.vivi"></li>
+	</comps>
   </ThingDef>
   <!--===========  Wild - clustering bushes (some harvestable) =============-->
   <ThingDef ParentName="TSP_CK_TropicalTree_Base">
