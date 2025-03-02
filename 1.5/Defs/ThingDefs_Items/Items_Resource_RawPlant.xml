@@ -301,7 +301,7 @@
     </statBases>
     <stackLimit>2400</stackLimit>
     <ingestible>
-      <foodType>OmnivoreHuman, OmnivoreRoughAnimal, OmnivoreAnimal, VegetarianRoughAnimal, VegetableOrFruit, Tree, Plant, Seed AnimalProduct, Meal, Processed, Fluid, Liquor, Kibble</foodType>
+      <foodType>OmnivoreHuman, OmnivoreRoughAnimal, OmnivoreAnimal, VegetarianRoughAnimal, VegetableOrFruit, Tree, Plant, Seed, AnimalProduct, Meal, Processed, Fluid, Liquor, Kibble</foodType>
       <preferability>RawTasty</preferability>
       <joy>0.05</joy>
       <joyKind>Gluttonous</joyKind>
