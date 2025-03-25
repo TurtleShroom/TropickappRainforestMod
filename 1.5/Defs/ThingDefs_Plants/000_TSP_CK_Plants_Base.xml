@@ -14,7 +14,7 @@
     </statBases>
     <ingestible>
       <preferability>DesperateOnly</preferability>
-	  <foodType>Plant, VegetarianRoughAnimal</foodType>
+	  <foodType>Tree, DendrovoreAnimal, Plant</foodType>
     </ingestible>
     <passability>Standable</passability>
     <selectable>true</selectable>
@@ -44,8 +44,8 @@
       <Beauty>5</Beauty>
     </statBases>
     <ingestible>
-      <foodType>Tree, DendrovoreAnimal, Plant</foodType>
-      <preferability>RawTasty</preferability>
+      <foodType>Tree, DendrovoreAnimal</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
     </ingestible>
     <selectable>true</selectable>
     <passability>Standable</passability>
@@ -80,7 +80,7 @@
       <Beauty>1</Beauty>
     </statBases>
     <ingestible>
-      <foodType>Plant, DendrovoreAnimal, VegetarianRoughAnimal</foodType>
+      <foodType>DendrovoreAnimal, Plant, VegetarianRoughAnimal</foodType>
       <preferability>DesperateOnlyForHumanlikes</preferability>
     </ingestible>
     <pathCost>10</pathCost>
