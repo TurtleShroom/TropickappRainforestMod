@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============== Base Definition ======================= -->
+  <!-- ============== Small MonkeyBase ======================= -->
+  <ThingDef Name="CK_SmallMonkeyThingBase" ParentName="TSP_CK_MiscAnimal_Base" Abstract="True">
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <Wildness>0.46</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2.6</power>
+        <cooldownTime>1.3</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2.6</power>
+        <cooldownTime>1.3</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Monkey</body>
+      <petness>0.25</petness>
+      <baseBodySize>0.35</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>0.45</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, Kibble</foodType>
+      <useMeatFrom>Monkey</useMeatFrom>
+      <useLeatherFrom>Monkey</useLeatherFrom>
+      <!-- <leatherLabel>monkey hide</leatherLabel>
+	  	<leatherColor>(124,53,29)</leatherColor>
+	  	<leatherInsulation>0.75</leatherInsulation>
+	  	<meatLabel>monkey meat</meatLabel> -->
+      <trainability>Advanced</trainability>
+      <herdAnimal>true</herdAnimal>
+      <nuzzleMtbHours>72</nuzzleMtbHours>
+      <gestationPeriodDays>16</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.9</minAge>
+          <soundWounded>Pawn_Monkey_Wounded</soundWounded>
+          <soundDeath>Pawn_Monkey_Death</soundDeath>
+          <soundCall>Pawn_Monkey_Call</soundCall>
+          <soundAngry>Pawn_Monkey_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <wildBiomes>
+				<!-- RimWorld.Core -->
+				<!-- VANILLA RENDITION -->
+
+				<BorealForest>0.001</BorealForest>
+
+				<Tundra>0</Tundra>
+
+				<ColdBog>0.01</ColdBog>
+
+				<IceSheet>0</IceSheet>
+
+				<SeaIce>0</SeaIce>
+
+				<TemperateForest>0.01</TemperateForest>
+
+				<TemperateSwamp>0.05</TemperateSwamp>
+
+				<TropicalRainforest>1</TropicalRainforest>
+
+				<TropicalSwamp>1</TropicalSwamp>
+
+				<AridShrubland>0</AridShrubland>
+
+				<Desert>0</Desert>
+
+				<ExtremeDesert>0</ExtremeDesert>
+
+				<!-- Ludeon.RimWorld.Odyssey -->
+				<!-- VANILLA RENDITION: ODYSSEY EXPANSION PACK -->
+				
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0</GlacialPlain>
+				
+				<Glowforest MayRequire="Ludeon.RimWorld.Odyssey">0.5</Glowforest>
+				
+				<Grasslands MayRequire="Ludeon.RimWorld.Odyssey">0</Grasslands>
+				
+				<LavaField MayRequire="Ludeon.RimWorld.Odyssey">0</LavaField>
+				
+				<Scarlands MayRequire="Ludeon.RimWorld.Odyssey">0</Scarlands> <!-- Nuclear weapons fallout zone -->
+
+
+
+				<!-- ___________________ -->			
+				<!--	Mod Biomes	-->
+				<!-- ___________________ -->
+
+				<!-- sarg.alphabiomes -->
+				<!-- ALPHA BIOMES -->
+
+				<AB_FeraliskInfestedJungle MayRequire="sarg.alphabiomes">1</AB_FeraliskInfestedJungle>
+
+				<AB_GallatrossGraveyard MayRequire="sarg.alphabiomes">0</AB_GallatrossGraveyard>
+
+				<AB_GelatinousSuperorganism MayRequire="sarg.alphabiomes">0.1</AB_GelatinousSuperorganism>
+
+				<AB_MechanoidIntrusion MayRequire="sarg.alphabiomes">0</AB_MechanoidIntrusion>
+
+				<AB_MycoticJungle MayRequire="sarg.alphabiomes">1</AB_MycoticJungle>
+
+				<AB_OcularForest MayRequire="sarg.alphabiomes">1</AB_OcularForest>
+
+				<AB_PropaneLakes MayRequire="sarg.alphabiomes">0</AB_PropaneLakes>
+
+				<AB_PyroclasticConflagration MayRequire="sarg.alphabiomes">1</AB_PyroclasticConflagration>
+
+				<AB_RockyCrags MayRequire="sarg.alphabiomes">0.01</AB_RockyCrags>
+
+				<AB_TarPits MayRequire="sarg.alphabiomes">0.05</AB_TarPits>
+
+				<AB_MiasmicMangrove MayRequire="sarg.alphabiomes">1</AB_MiasmicMangrove>
+
+				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">1</AB_IdyllicMeadows>
+
+
+
+				<!-- ___________________ -->
+
+				<!-- BiomesTeam.Oasis -->
+				<!-- CHROMATIC OASIS -->
+
+				<BMT_ChromaticOasis MayRequire="BiomesTeam.Oasis">1</BMT_ChromaticOasis>
+
+
+
+				<!-- ___________________ -->
+
+				<!-- Mlie.AdvancedBiomes -->
+				<!-- ADVANCED BIOMES -->
+
+				<PoisonForest MayRequire="Mlie.AdvancedBiomes">0.33</PoisonForest>
+
+				<Savanna MayRequire="Mlie.AdvancedBiomes">0</Savanna>
+
+				<Volcano MayRequire="Mlie.AdvancedBiomes">0</Volcano>
+
+				<Wasteland MayRequire="Mlie.AdvancedBiomes">0</Wasteland>
+
+				<Wetland MayRequire="Mlie.AdvancedBiomes">0.2</Wetland>
+
+
+				<!-- ___________________ -->
+
+				<!-- zylle.MoreVanillaBiomes -->
+				<!-- More Vanilla Biomes -->
+
+				<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_AlpineMeadow>
+
+				<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">1</ZBiome_CloudForest>
+
+				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_CoastalDunes>
+
+				<ZBiome_DesertOasis MayRequire="zylle.MoreVanillaBiomes">0.5</ZBiome_DesertOasis>
+
+				<ZBiome_Grasslands MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Grasslands>
+
+				<ZBiome_Iceberg_NoBeach MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Iceberg_NoBeach>
+
+				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.5</ZBiome_Marsh>
+
+				<ZBiome_Sandbar_NoBeach MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Sandbar_NoBeach>
+				
+				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_GlacialShield>
+				
+				<ZBiome_Badlands MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Badlands>
+
+
+				<!-- ___________________ -->
+
+				<!-- Mlie.NaturesPrettySweet -->
+				<!-- NATURE IS PRETTY SWEET -->
+
+				<TKKN_VolcanicFlow MayRequire="Mlie.NaturesPrettySweet">0.01</TKKN_VolcanicFlow>
+
+				<TKKN_RedwoodForest MayRequire="Mlie.NaturesPrettySweet">0.5</TKKN_RedwoodForest>
+
+				<TKKN_Grasslands MayRequire="Mlie.NaturesPrettySweet">0</TKKN_Grasslands> <!-- PRAIRIE -->
+
+				<TKKN_Savanna MayRequire="Mlie.NaturesPrettySweet">0</TKKN_Savanna>
+
+				<TKKN_Desert MayRequire="Mlie.NaturesPrettySweet">0</TKKN_Desert> <!-- SALT FIELDS -->
+
+				<TKKN_Oasis MayRequire="Mlie.NaturesPrettySweet">0.2</TKKN_Oasis>			
+
+
+				<!-- ___________________ -->
+
+				<!-- Heis.Edo.Themed.Expansion -->
+				<!-- HISTORICALLY ACCURATE WEEABOO MOD -->
+
+				<HSBambooForest MayRequire="Heis.Edo.Themed.Expansion">0.75</HSBambooForest>
+
+
+				<!-- _________________ -->
+
+				<!-- BiomesTeam.BiomesIslands -->
+				<!-- BIOMES ISLANDS -->
+
+				<BiomesIslands_Atoll MayRequire="BiomesTeam.BiomesIslands">1</BiomesIslands_Atoll>
+
+				<BiomesIslands_BorealIsland MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_BorealIsland>
+
+				<BiomesIslands_DesertIsland MayRequire="BiomesTeam.BiomesIslands">0.001</BiomesIslands_DesertIsland>
+
+				<BiomesIslands_DesertArchipelago MayRequire="BiomesTeam.BiomesIslands">0.001</BiomesIslands_DesertArchipelago>
+
+				<BiomesIslands_TemperateIsland MayRequire="BiomesTeam.BiomesIslands">1</BiomesIslands_TemperateIsland>
+
+				<BiomesIslands_TemperateArchipelago MayRequire="BiomesTeam.BiomesIslands">1</BiomesIslands_TemperateArchipelago>
+
+				<BiomesIslands_TropicalIsland MayRequire="BiomesTeam.BiomesIslands">1</BiomesIslands_TropicalIsland>
+
+				<BiomesIslands_TropicalArchipelago MayRequire="BiomesTeam.BiomesIslands">1</BiomesIslands_TropicalArchipelago>
+
+				<BiomesIslands_TundraIsland MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_TundraIsland>
+				
+				
+				
+				<!-- _________________ -->
+
+				<!-- BiomesTeam.BiomesCaverns -->
+				<!-- BIOMES CAVERNS -->
+				
+				<BMT_CrystalCaverns MayRequire="BiomesTeam.BiomesCaverns">0</BMT_CrystalCaverns>
+				
+				<BMT_EarthenDepths MayRequire="BiomesTeam.BiomesCaverns">0</BMT_EarthenDepths>
+				
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.22</BMT_FungalForest>
+				
+
+
+				<!-- ___________________ -->
+
+				<!-- reel.FrozenForest -->
+				<!-- WINTER TAIGA -->
+
+				<WinterTaiga MayRequire="reel.FrozenForest">0.001</WinterTaiga>
+
+
+				<!-- __________________ -->
+
+				<!-- SirMashedPotato.MorrowRim -->
+				<!-- "MORROWIND" MOD -->
+
+				<MorrowRim_Ashlands MayRequire="SirMashedPotato.MorrowRim">0</MorrowRim_Ashlands>
+
+				<MorrowRim_BlightedAshlands MayRequire="SirMashedPotato.MorrowRim">0</MorrowRim_BlightedAshlands>
+
+				<MorrowRim_AshSwamp MayRequire="SirMashedPotato.MorrowRim.ashswamp">0.5</MorrowRim_AshSwamp>
+
+				<MorrowRim_VolcanicAshlands MayRequire="SirMashedPotato.MorrowRim.volcanicashlands">0.01</MorrowRim_VolcanicAshlands>
+				
+				<Mashed_Ashlands_BlightedBogAshlands MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_BlightedBogAshlands>
+				
+				<Mashed_Ashlands_BlightedAshlands MayRequire="sirmashedpotato.ashlands">0</Mashed_Ashlands_BlightedAshlands>
+				
+				<Mashed_Ashlands_Ashlands MayRequire="sirmashedpotato.ashlands">0</Mashed_Ashlands_Ashlands>
+				
+				<Mashed_Ashlands_DustplainAshlands MayRequire="sirmashedpotato.ashlands">0</Mashed_Ashlands_DustplainAshlands>
+				
+				<Mashed_Ashlands_GrazelandAshlands MayRequire="sirmashedpotato.ashlands">0</Mashed_Ashlands_GrazelandAshlands>
+				
+				<Mashed_Ashlands_SwampAshlands MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_SwampAshlands>
+				
+				<Mashed_Ashlands_ForestAshlands MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_ForestAshlands>
+				
+				<Mashed_Ashlands_MarshAshlands MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_MarshAshlands>
+				
+				<Mashed_Ashlands_MeadowAshlands MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_MeadowAshlands>
+
+
+				<!-- ___________________ -->
+
+				<!-- pphhyy.gulden -->
+				<!-- FOREST OF GOLD -->
+
+				<TemperateGuldenForest MayRequire="pphhyy.gulden">1</TemperateGuldenForest>
+
+				<LotRE_MallornForest MayRequire="lordoftherims.elves">1</LotRE_MallornForest>
+
+
+				<!-- ___________________ -->
+
+				<!-- deemainiac.securecontainrimworld -->
+				<!-- SCP FOUNDATION -->
+
+				<SCR_SCP610Biome MayRequire="deemainiac.securecontainrimworld">0</SCR_SCP610Biome>
+
+
+				<!-- _________________ -->
+
+				<!-- regrowth.botr.volcanicicesheet -->
+				<!-- VOLCANIC ICE SHEET -->
+
+				<RG-VIS_VulcanicIceSheet MayRequire="regrowth.botr.volcanicicesheet">0</RG-VIS_VulcanicIceSheet>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- ironscruff.primordialgeysers -->
+				<!-- PRIMORDIAL GEYSERS -->
+				
+				<IronScruff_PrimordialGeysers MayRequire="ironscruff.primordialgeysers">0</IronScruff_PrimordialGeysers>
+
+
+				<!-- _________________ -->
+				
+				<!-- mlie.rfpermafrost -->
+				<!-- PERMAFROST ZONE -->
+
+				<Permafrost MayRequire="mlie.rfpermafrost">0</Permafrost>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- comigogames.biomes.greaterswamps -->
+				<!-- GREATER SWAMPS -->
+				
+				<COMIGO_GreaterSwamp_Temperate MayRequire="comigogames.biomes.greaterswamps">1</COMIGO_GreaterSwamp_Temperate>
+
+				<COMIGO_GreaterSwamp_Cold MayRequire="comigogames.biomes.greaterswamps">0.01</COMIGO_GreaterSwamp_Cold>
+
+				<COMIGO_GreaterSwamp_Tropical MayRequire="comigogames.biomes.greaterswamps">1</COMIGO_GreaterSwamp_Tropical>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- needler98.dune -->
+				<!-- SPICE ZONE (DUNE) -->
+				
+				<SpiceDesert MayRequire="comigogames.biomes.greaterswamps">0</SpiceDesert>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- dankpyon.medieval.overhaul -->
+				<!-- MEDIEVAL OVERHAUL -->
+				
+				<!-- <DankPyon_AncientForest MayRequire="dankpyon.medieval.overhaul">0</DankPyon_AncientForest> -->
+				
+				<DankPyon_DarkForest MayRequire="dankpyon.medieval.overhaul">0.5</DankPyon_DarkForest>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- tw.tangsbiome.rainbowforest -->
+				<!-- RAINBOW LAND -->
+				
+				<TWRL_Biome_RainbowLand MayRequire="tw.tangsbiome.rainbowforest">0.5</TWRL_Biome_RainbowLand>
+				
+				
+				
+				<!-- _________________ -->
+				
+				<!-- grimterra.biomesmod -->
+				<!-- GRIM TERRA -->
+				
+				<BiomeGRimberlands MayRequire="grimterra.biomesmod">1</BiomeGRimberlands> <!-- GR-Tropical -->
+				
+				<BiomeGRimerald MayRequire="grimterra.biomesmod">1</BiomeGRimerald> <!-- Overgrown Ruins -->
+				
+				<BiomeGRimethyst MayRequire="grimterra.biomesmod">1</BiomeGRimethyst> <!-- Never Glades Bog -->
+				
+				<BiomeGRimonade MayRequire="grimterra.biomesmod">0</BiomeGRimonade> <!-- Frozen Ruins -->
+				
+				<BiomeGRimond MayRequire="grimterra.biomesmod">0</BiomeGRimond> <!-- Blue Desert -->
+				
+				<BiomeGRimphire MayRequire="grimterra.biomesmod">0</BiomeGRimphire> <!-- Blue Fire Mountains -->
+				
+				<BiomeGRimworld MayRequire="grimterra.biomesmod">0</BiomeGRimworld> <!-- Bleached Desert No-Man's Land -->
+				
+				<BiomeGRuby MayRequire="grimterra.biomesmod">1</BiomeGRuby> <!-- Forever Forest -->
+				
+				<BiomeGRuquoise MayRequire="grimterra.biomesmod">0</BiomeGRuquoise> <!-- Graze Lands -->
+				
+				
+				
+				<!-- _________________ -->
+				
+				<!-- thrawnbar.animaforest -->
+				<!-- ANIMA FOREST -->
+				
+				<AnimaForest MayRequire="thrawnbar.animaforest">1</AnimaForest>
+      </wildBiomes>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>PiratePet</li>
+    </tradeTags>
+  </ThingDef>
+  <PawnKindDef Name="CK_SmallMonkeyKindBase" ParentName="AnimalKindBase" Abstract="True">
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <wildGroupSize>
+      <min>3</min>
+      <max>7</max>
+    </wildGroupSize>
+  </PawnKindDef>
+  <!-- ============== Base Definition ======================= -->
+  <!-- ============== Ape Monkey Base ======================= -->
+  <ThingDef Abstract="True" ParentName="CK_SmallMonkeyThingBase" Name="CK_ApeMonkeyThingBase">
+    <statBases>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <MarketValue>550</MarketValue>
+      <Wildness>0.75</Wildness>
+    </statBases>
+    <tools Inherit="False">
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.6</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.6</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Monkey</body>
+      <petness>0.25</petness>
+      <baseBodySize>1.7</baseBodySize>
+      <baseHungerRate>0.9</baseHungerRate>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <useMeatFrom>Monkey</useMeatFrom>
+      <useLeatherFrom>Monkey</useLeatherFrom>
+      <!-- <leatherLabel>monkeyhide</leatherLabel>
+      <leatherColor>(124,53,29)</leatherColor>
+      <leatherInsulation>0.75</leatherInsulation>
+      <meatLabel>monkey meat</meatLabel> -->
+      <trainability>Advanced</trainability>
+      <manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <nuzzleMtbHours>72</nuzzleMtbHours>
+      <gestationPeriodDays>32</gestationPeriodDays>
+      <lifeExpectancy>30</lifeExpectancy>
+      <herdAnimal>true</herdAnimal>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.9</minAge>
+          <soundWounded>Pawn_Monkey_Wounded</soundWounded>
+          <soundDeath>Pawn_Monkey_Death</soundDeath>
+          <soundCall>Pawn_Monkey_Call</soundCall>
+          <soundAngry>Pawn_Monkey_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <wildBiomes>
+      </wildBiomes>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  <PawnKindDef Name="CK_ApeMonkeyKindBase" ParentName="CK_SmallMonkeyKindBase" Abstract="True">
+    <combatPower>200</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <wildGroupSize>
+      <min>2</min>
+      <max>5</max>
+    </wildGroupSize>
+  </PawnKindDef>
+  <!-- ============== Squirrel Monkey ======================= -->
+  <!--   <ThingDef ParentName="CK_SmallMonkeyThingBase">
+    <defName>CK_SquirrelMonkey</defName>
+    <label>squirrel monkey</label>
+    <description>The common squirrel monkey prefers to live in the middle canopy, but occasionally comes to the ground or goes up into the high canopy. They like vegetation which provides good cover from birds of prey in the rainforest, savannah, mangroves, or marshlands.</description>
+    <race>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHungerRate>0.30</baseHungerRate>
+      <baseHealthScale>0.25</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+  </ThingDef>
+  -->
+
+  <PawnKindDef ParentName="CK_SmallMonkeyKindBase">
+    <defName>CK_SquirrelMonkey</defName>
+    <label>squirrel monkey</label>
+    <race>Monkey</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <!-- ================= Gorilla ========================== -->
+  <!--   <ThingDef ParentName="CK_ApeMonkeyThingBase">
+    <defName>CK_Gorilla</defName>
+    <label>gorilla</label>
+    <description>Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit remote jungles. They are the largest living primates. Gorillas' natural habitats cover tropical forests. </description>
+  </ThingDef>
+
+  <PawnKindDef ParentName="CK_ApeMonkeyKindBase">
+    <defName>CK_Gorilla</defName>
+    <label>gorilla</label>
+    <race>CK_Gorilla</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gorilla</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gorilla</texPath>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+              <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Gorilla</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+              <volume>(0.8, 0.6, 0.6)</volume>
+              <offset>(0,0,-0.3)</offset>
+            </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  -->
+  
+  <!-- =============== Spider Monkey ======================= -->
+  <!--  <ThingDef ParentName="CK_SmallMonkeyThingBase">
+    <defName>CK_SpiderMonkey</defName>
+    <label>spider monkey</label>
+    <description>Disproportionately long limbs and long prehensile tails make them one of the largest (Old Earth) New World monkeys and give rise to their common name. Spider monkeys live in the upper layers of the rainforest, and forage in the high canopy, from 25 to 30 m (82 to 98 ft).They primarily eat fruits, but will also occasionally consume leaves, flowers, and insects. Due to their large size, spider monkeys require large tracts of moist evergreen forests, and prefer undisturbed primary rainforest. They are social animals and live in bands of up to 35 individuals but will split up to forage during the day.</description>
+    <race>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHungerRate>0.30</baseHungerRate>
+      <baseHealthScale>0.35</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+  </ThingDef>
+  -->
+
+  <PawnKindDef ParentName="CK_SmallMonkeyKindBase">
+    <defName>CK_SpiderMonkey</defName>
+    <label>spider monkey</label>
+    <race>Monkey</race>
+    <combatPower>11</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySpider</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySpider</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySpider</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- ============== Capuchin Monkey ======================= -->
+  <!--   <ThingDef ParentName="CK_SmallMonkeyThingBase">
+    <defName>CK_CapuchinMonkey</defName>
+    <label>capuchin monkey</label>
+    <description>Capuchins are diurnal and arboreal. With the exception of a midday nap, they spend their entire day searching for food. At night, they sleep in the trees, wedged between branches. They are undemanding regarding their habitat and can thus be found in many differing areas. They are omnivores, and consume a variety of plant parts such as leaves, flower and fruit, seeds, pith, woody tissue, sugarcane, bulb, and exudates, as well as arthropods, molluscs, a variety of vertebrates, and even primates. They are characterized as innovative and extreme foragers because of their ability to acquire sustenance from a wide collection of unlikely food, which may assure them survival in habitats with extreme food limitation. Capuchin monkeys often live in large groups of 10 to 35 individuals within the forest, although they can easily adapt to places colonized by humans. Usually, a single male will dominate the group.</description>
+    <race>
+      <baseBodySize>0.40</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>0.20</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+  </ThingDef>
+  -->
+
+  <PawnKindDef ParentName="CK_SmallMonkeyKindBase">
+    <defName>CK_CapuchinMonkey</defName>
+    <label>capuchin monkey</label>
+    <race>Monkey</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>0.2</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>0.4</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/MonkeySquirrel</texPath>
+          <drawSize>0.6</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Monkey/Dessicated_Monkey</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

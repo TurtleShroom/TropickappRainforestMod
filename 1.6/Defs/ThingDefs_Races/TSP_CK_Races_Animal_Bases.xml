@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<ThingDef Name="TSP_CK_MiscAnimal_Base" ParentName="AnimalThingBase" Abstract="True">
+		<statBases>
+			<ComfyTemperatureMax>73</ComfyTemperatureMax>
+		</statBases>
+		<race>
+		</race>
+	</ThingDef>
+	
+	<ThingDef Name="TSP_CK_BigCat_Base" ParentName="BigCatThingBase" Abstract="True">
+		<statBases>
+			<ComfyTemperatureMax>73</ComfyTemperatureMax>
+		</statBases>
+		<race>
+		</race>
+	</ThingDef>
+</Defs>

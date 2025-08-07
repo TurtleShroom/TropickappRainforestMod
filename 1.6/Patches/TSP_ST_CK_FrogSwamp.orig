@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional" MayRequire="mlie.tropickapprainforestmod">
+    <xpath>/Defs/BiomeDef[defName="froggySwamp"]</xpath>
+    <match Class="PatchOperationAdd" MayRequire="mlie.tropickapprainforestmod">
+      <!-- Adding new plants to TropicalRainforest Biome  -->
+      <xpath MayRequire="mlie.tropickapprainforestmod">/Defs/BiomeDef[defName="froggySwamp"]/wildPlants</xpath>
+      <success MayRequire="mlie.tropickapprainforestmod">Always</success>
+      <value MayRequire="mlie.tropickapprainforestmod">
+        <CK_PlantFern MayRequire="mlie.tropickapprainforestmod">2</CK_PlantFern>
+        <CK_PlantTreePalm MayRequire="mlie.tropickapprainforestmod">0.21</CK_PlantTreePalm>
+        <CK_PlantBushPalm MayRequire="mlie.tropickapprainforestmod">0.0001</CK_PlantBushPalm>
+        <CK_PlantTreeBamboo MayRequire="mlie.tropickapprainforestmod">0.005</CK_PlantTreeBamboo>
+        <CK_PlantBromeliad MayRequire="mlie.tropickapprainforestmod">0.024</CK_PlantBromeliad>
+        <CK_PlantTreeWildCoconutPalm MayRequire="mlie.tropickapprainforestmod">0.0025</CK_PlantTreeWildCoconutPalm>
+        <CK_PlantTreeMahogany MayRequire="mlie.tropickapprainforestmod">0.0001</CK_PlantTreeMahogany>
+        <CK_PlantTreeStranglerFig MayRequire="mlie.tropickapprainforestmod">0.0013</CK_PlantTreeStranglerFig>
+        <CK_PlantWildRice MayRequire="mlie.tropickapprainforestmod">0.0003</CK_PlantWildRice>
+        <CK_PlantWildTaro MayRequire="mlie.tropickapprainforestmod">0.003</CK_PlantWildTaro>
+        <CK_PlantTreeWildBanana MayRequire="mlie.tropickapprainforestmod">0.001</CK_PlantTreeWildBanana>
+        <CK_PlantWildLemongrass MayRequire="mlie.tropickapprainforestmod">0.002</CK_PlantWildLemongrass>
+        <CK_PlantHeliconia MayRequire="mlie.tropickapprainforestmod">0.15</CK_PlantHeliconia>
+        <CK_PlantWildJitterWeed MayRequire="mlie.tropickapprainforestmod">0.005</CK_PlantWildJitterWeed>
+        <CK_PlantWildSmokeleaf MayRequire="mlie.tropickapprainforestmod">0.03</CK_PlantWildSmokeleaf>
+        <CK_PlantWildPsychoid MayRequire="mlie.tropickapprainforestmod">0.003</CK_PlantWildPsychoid>
+        <CK_PlantWildBushDreamVine MayRequire="mlie.tropickapprainforestmod">0.002</CK_PlantWildBushDreamVine>
+        <CK_PlantWildCotton MayRequire="mlie.tropickapprainforestmod">0.002</CK_PlantWildCotton>
+        <CK_PlantRafflesia MayRequire="mlie.tropickapprainforestmod">0.002</CK_PlantRafflesia>
+        <CK_SpecialTreeHive MayRequire="mlie.tropickapprainforestmod">0.008</CK_SpecialTreeHive>
+      </value>
+    </match>
+  </Operation>
+</Patch>

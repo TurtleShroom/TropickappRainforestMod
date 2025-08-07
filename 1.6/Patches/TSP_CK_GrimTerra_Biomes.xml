@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/BiomeDef[defName="BiomeGRimberlands"]</xpath>
+		<!-- <success>Always</success> -->
+		<!-- If it does, LET'S FASTING GOOOOO! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--
+				<li Class="PatchOperationTest">
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]</xpath>
+				</li>
+				-->
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/animalDensity</xpath>
+					<value>
+						<animalDensity>2.5</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/plantDensity</xpath>
+					<value>
+						<plantDensity>2.5</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>1</Clear>
+							<Fog>3</Fog>
+							<Rain>37</Rain>
+							<RainyThunderstorm>27</RainyThunderstorm>
+							<FoggyRain>25</FoggyRain>
+							<SnowGentle>1</SnowGentle>
+							<SnowHard>0</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">8</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">8</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">0</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">1</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">0</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">2</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/animalDensity</xpath>
+					<value>
+						<animalDensity>1</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/plantDensity</xpath>
+					<value>
+						<plantDensity>2.75</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>1</Clear>
+							<Fog>30</Fog>
+							<Rain>7</Rain>
+							<RainyThunderstorm>7</RainyThunderstorm>
+							<FoggyRain>15</FoggyRain>
+							<SnowGentle>2</SnowGentle>
+							<SnowHard>7</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">8</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">8</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">1</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">15</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">2</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">20</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/animalDensity</xpath>
+					<value>
+						<animalDensity>5</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/plantDensity</xpath>
+					<value>
+						<plantDensity>3</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>1</Clear>
+							<Fog>3</Fog>
+							<Rain>37</Rain>
+							<RainyThunderstorm>17</RainyThunderstorm>
+							<FoggyRain>15</FoggyRain>
+							<SnowGentle>1</SnowGentle>
+							<SnowHard>1</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">18</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">10</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">0</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">1</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">0</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">20</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/animalDensity</xpath>
+					<value>
+						<animalDensity>1.5</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/plantDensity</xpath>
+					<value>
+						<plantDensity>1.25</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>20</Clear>
+							<Fog>3</Fog>
+							<Rain>3</Rain>
+							<RainyThunderstorm>7</RainyThunderstorm>
+							<FoggyRain>1</FoggyRain>
+							<SnowGentle>35</SnowGentle>
+							<SnowHard>25</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">0</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">3</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">10</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">1</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">0</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">50</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/animalDensity</xpath>
+					<value>
+						<animalDensity>0.5</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/plantDensity</xpath>
+					<value>
+						<plantDensity>0.33</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>75</Clear>
+							<Fog>1</Fog>
+							<Rain>1</Rain>
+							<RainyThunderstorm>1</RainyThunderstorm>
+							<FoggyRain>1</FoggyRain>
+							<SnowGentle>20</SnowGentle>
+							<SnowHard>15</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">0</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">0</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">5</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">1</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">20</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">50</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/animalDensity</xpath>
+					<value>
+						<animalDensity>1</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/plantDensity</xpath>
+					<value>
+						<plantDensity>2</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>7</Clear>
+							<Fog>20</Fog>
+							<Rain>5</Rain>
+							<RainyThunderstorm>17</RainyThunderstorm>
+							<FoggyRain>1</FoggyRain>
+							<SnowGentle>10</SnowGentle>
+							<SnowHard>15</SnowHard>
+							<AB_RedFog MayRequire="sarg.alphabiomes">7</AB_RedFog>
+							<RG_Monsoon MayRequire="regrowth.botr.core">3</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">1</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">5</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">1</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">2</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">50</Windy>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/animalDensity</xpath>
+					<value>
+						<animalDensity>0.31</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
+					<value>
+						<plantDensity>0.2</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>1</Clear>
+							<Fog>20</Fog>
+							<Rain>1</Rain>
+							<RainyThunderstorm>1</RainyThunderstorm>
+							<DryThunderstorm>15</DryThunderstorm>
+							<FoggyRain>1</FoggyRain>
+							<SnowGentle>3</SnowGentle>
+							<SnowHard>1</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">0</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">0</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">0</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">10</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">100</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">20</Windy>
+							<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">5</GrayPall>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRuby"]/animalDensity</xpath>
+					<value>
+						<animalDensity>3</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for BiomeGRuby Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
+					<value>
+						<plantDensity>3</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRuby"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>6</Clear>
+							<Fog>5</Fog>
+							<Rain>7</Rain>
+							<RainyThunderstorm>25</RainyThunderstorm>
+							<FoggyRain>1</FoggyRain>
+							<SnowGentle>13</SnowGentle>
+							<SnowHard>7</SnowHard>
+							<AB_ForsakenNight MayRequire="sarg.alphabiomes">10</AB_ForsakenNight>
+							<AB_ForsakenRainyNight MayRequire="sarg.alphabiomes">10</AB_ForsakenRainyNight>
+							<AB_ForsakenNight_Alternate MayRequire="sarg.alphabiomes">5</AB_ForsakenNight_Alternate>
+							<AB_ForsakenRainyNight_Alternate MayRequire="sarg.alphabiomes">5</AB_ForsakenRainyNight_Alternate>
+							<RG_Monsoon MayRequire="regrowth.botr.core">1</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">1</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">5</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">30</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">10</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">75</Windy>
+							<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">20</GrayPall>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Animal Density for Tropical Rainforest -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/animalDensity</xpath>
+					<value>
+						<animalDensity>4</animalDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<!-- Changes to Plant Density for BiomeGRuby Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/plantDensity</xpath>
+					<value>
+						<plantDensity>1</plantDensity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<!-- Changes to weather for TropicalRainforest Biome -->
+					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/baseWeatherCommonalities</xpath>
+					<value>
+						<baseWeatherCommonalities>
+							<Clear>25</Clear>
+							<Fog>1</Fog>
+							<Rain>7</Rain>
+							<FoggyRain>1</FoggyRain>
+							<RainyThunderstorm>2</RainyThunderstorm>
+							<SnowGentle>13</SnowGentle>
+							<SnowHard>5</SnowHard>
+							<RG_Monsoon MayRequire="regrowth.botr.core">0</RG_Monsoon>
+							<TorrentialRain MayRequire="ludeon.rimworld.odyssey">0</TorrentialRain>
+							<Blizzard MayRequire="ludeon.rimworld.odyssey">2</Blizzard>
+							<BlindFog MayRequire="ludeon.rimworld.odyssey">0.01</BlindFog>
+							<Sandstorm MayRequire="ludeon.rimworld.odyssey">0.1</Sandstorm>
+							<Windy MayRequire="ludeon.rimworld.odyssey">20</Windy>
+							<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+						</baseWeatherCommonalities>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

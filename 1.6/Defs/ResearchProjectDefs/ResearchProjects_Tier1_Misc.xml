@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>CK_Beekeeping</defName>
+    <label>beekeeping</label>
+    <description>Allows colonists to use apiaries in growing zones.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
+  </ResearchProjectDef>
+</Defs>
