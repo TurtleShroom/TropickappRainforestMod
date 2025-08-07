@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Tropi[CKAPP] Rainforest Mod (Continued)</name>
+  <name>TurtleShroom Productions Proudly Presents: CKAPP Tropical Rainforest Mod (Continued)</name>
   <packageId>Mlie.TropickappRainforestMod</packageId>
-  <author>Mlie</author>
+  <author>Kaptain Kaverns, Mlie, TurtleShroom</author>
   <url>https://github.com/emipa606/TropickappRainforestMod</url>
   <supportedVersions>
     <li>1.0</li>
@@ -13,10 +13,24 @@
     <li>1.5</li>
 	<li>1.6</li>
   </supportedVersions>
-  <modDependencies>
-  </modDependencies>
+	<modDependenciesByVersion>
+		<v1.0></v1.0>
+		<v1.1></v1.1>
+		<v1.2></v1.2>
+		<v1.3></v1.3>
+		<v1.4></v1.4>
+		<v1.5></v1.5>
+		<v1.6>
+		  <li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Factions Expanded Framework Mod</displayName>
+			<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		  </li>
+		</v1.6>
+	</modDependenciesByVersion>
   <loadAfter>
     <li>spoonshortage.ADogSaidAnimalProsthetics</li>
+	<li>sambucher.adogsaidanimalprosthetics2</li>
     <li>yanzihko.ffr</li>
     <li>yanzihko.yzrcm</li>
     <li>vanillaexpanded.vanillaanimalsexpanded</li>
@@ -31,12 +45,34 @@
     <li>heis.edo.themed.expansion</li>
     <li>trickity.samurai.faction</li>
     <li>heis.edo.themed.expansion.redundancy.patch</li>
+	<li>vanillaexpanded.vplantse</li>
+	<li>vanillaexpanded.vaeroy</li>
+	<li>vanillaexpanded.vaeroy.omegachickenpatch</li>
+	<li>hc.animal.continued</li>
+	<li>vanillaexpanded.vplantsemore</li>
+	<li>vanillaexpanded.vplantsemushrooms</li>
   </loadAfter>
   <loadBefore>
     <li>tsp.isengriff.storytime</li>
     <li>ender.snaketophat</li>
+	<li>tsp.beelievers</li>
+	<li>zal.patchhoney</li>
+	<li>tsp.zal.patchhoney2</li>
+	<li>tsp.velcroboy333.medievalfestival.banquet</li>
+	<li>tsp.girlbominations</li>
   </loadBefore>
-  <description>.
+  <description>[H1]TurtleShroom Productions Proudly Presents: CKAPP Tropical Rainforest Mod (Continued)[/H1]
+  
+  Thank you for downloading the continuation of the CKAPP Tropical Rainforest Mod. It is my privilege to, with Mlie's encouragement, take another load off his shoulders and continue the ambitious project of bringing one of "Rimworld's" best Biome balance changing Mods back to the RW Steam Workshop. This Mod causes the Tropical Rainforest (and many other tropical Biomes) to be dense in vegetation and teeming with animal life. It greatly increases the amount and types of animals.
+  
+  With "Odyssey" support, duplicated creatures are resolved (so, for example, tigers in this Mod are directly related to "Odyssey" Tigers) and adjusted to minimize both bloat and conflicts. The exotic forms of weather in "Odyssey" are also factored in, leading to realistic monsoons and flooding. In all, this Mod makes tropical climates more challenging and fun to play,as well as giving players a wealth of abundant resources to employ in their colonial endeavors.
+  
+  This version fixes many, MANY bugs from the Mlie version, many of which I accidentally created myself. I give out special thanks to the user Bernau31 and his diligence in documenting the exact erorrs, down to the very Thing Defs and names of those involved! That was invaluable!
+  
+  FUTURE PLANS:
+	1. Support for the Vanilla Factions Expanded Medieval Mod's Draught system (Dream Roots, Jitter Berries, etc.)
+	2. Support for the Medieval Overhaul Mod's Alchemy system (Dream Roots, Jitter Berries, etc.)
+	3. Further "Odyssey" integration, possible combining of Pawn Kind Defs and Thing Defs for duplicated animals
   
   
   
