@@ -7,7 +7,7 @@
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>7</Beauty>
-      <Nutrition>0.1</Nutrition>
+      <!-- <Nutrition>0.1</Nutrition> -->
     </statBases>
     <graphicData>
       <texPath>Things/Plant/Fern</texPath>
@@ -15,8 +15,7 @@
     </graphicData>
     <altitudeLayer>Item</altitudeLayer>
     <selectable>true</selectable>
-    <ingestible>
-    </ingestible>
+    <!-- <ingestible></ingestible> -->
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
@@ -44,7 +43,7 @@
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>25</Beauty>
-      <Nutrition>0.05</Nutrition>
+      <!-- <Nutrition>0.05</Nutrition> -->
     </statBases>
     <graphicData>
       <texPath>Things/Plant/PottedBromeliad</texPath>
@@ -52,8 +51,7 @@
     </graphicData>
     <altitudeLayer>Item</altitudeLayer>
     <selectable>true</selectable>
-    <ingestible>
-    </ingestible>
+    <!-- <ingestible></ingestible> -->
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
@@ -79,7 +77,7 @@
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>15</Beauty>
-      <Nutrition>0.05</Nutrition>
+      <!-- <Nutrition>0.05</Nutrition> -->
     </statBases>
     <graphicData>
       <texPath>Things/Plant/PottedHeliconia</texPath>
@@ -87,8 +85,7 @@
     </graphicData>
     <altitudeLayer>Item</altitudeLayer>
     <selectable>true</selectable>
-    <ingestible>
-    </ingestible>
+    <!-- <ingestible></ingestible> -->
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>

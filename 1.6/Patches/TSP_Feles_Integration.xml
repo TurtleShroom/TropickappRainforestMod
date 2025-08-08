@@ -55,19 +55,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <Operation Class="PatchOperationConditional" MayRequire="yanzihko.ffr">
-    <!-- Does this exist? -->
-    <xpath MayRequire="vanillaexpanded.vaeroy">/Defs/ThingDef[defName="LaoHu_HuaNan"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace" MayRequire="yanzihko.ffr">
-      <xpath MayRequire="yanzihko.ffr">/Defs/AlienRace.ThingDef_AlienRace[defName="YanzihkoTigris"]/race/useMeatFrom</xpath>
-      <success MayRequire="yanzihko.ffr">Always</success>
-      <value MayRequire="yanzihko.ffr">
-        <useMeatFrom>LaoHu_HuaNan</useMeatFrom>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="YanzihkoPanther"]/race/leatherDef</xpath>

@@ -7,16 +7,20 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationAdd">
+        <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="TSP_CK_TropicalCrop_Base"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>VFET_Agriculture</li>
+			<sowResearchPrerequisites>
+				<li>VFET_Agriculture</li>
+			</sowResearchPrerequisites>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
+        <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="CK_SpecialTreeApiary"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>VFET_Agriculture</li>
+			<sowResearchPrerequisites>
+				<li>VFET_Agriculture</li>
+			</sowResearchPrerequisites>
           </value>
         </li>
       </operations>

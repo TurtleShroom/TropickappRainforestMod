@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="TSP_CK_TropicalPlant_Base" ParentName="PlantBase" Abstract="True">
+  <ThingDef Name="TSP_CK_TropicalPlant_Base" ParentName="PlantBaseNonEdible" Abstract="True">
     <pathCost>10</pathCost>
     <blockWind>false</blockWind>
     <statBases>
       <Mass>200</Mass>
       <MarketValue>0</MarketValue>
       <Beauty>4</Beauty>
-      <Nutrition>2</Nutrition>
+      <!-- <Nutrition>2</Nutrition> -->
     </statBases>
+	<!--
     <ingestible>
 		<foodType>DendrovoreAnimal, Tree, Plant</foodType>
 		<preferability>DesperateOnly</preferability>
+		<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		<showIngestFloatOption>false</showIngestFloatOption>
     </ingestible>
+	-->
     <passability>Standable</passability>
     <selectable>true</selectable>
     <plant>
@@ -377,13 +381,17 @@
     <statBases>
       <MarketValue>1</MarketValue>
       <Mass>430</Mass>
-      <Nutrition>4</Nutrition>
+      <!-- <Nutrition>4</Nutrition> -->
       <Beauty>5</Beauty>
     </statBases>
+	<!--
     <ingestible>
-      <foodType>Tree, DendrovoreAnimal, Plant</foodType>
-      <preferability>RawTasty</preferability>
+		<foodType Inherit="False">Tree, DendrovoreAnimal</foodType>
+		<preferability>RawTasty</preferability>
+		<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		<showIngestFloatOption>false</showIngestFloatOption>
     </ingestible>
+	-->
     <selectable>true</selectable>
     <passability>Standable</passability>
     <plant>
@@ -413,14 +421,18 @@
   <ThingDef Name="TSP_CK_TropicalCrop_Base" ParentName="TSP_CK_TropicalPlant_Base" Abstract="True">
     <statBases>
       <Mass>1</Mass>
-      <Nutrition>2</Nutrition>
+      <!-- <Nutrition>2</Nutrition> -->
       <MarketValue>1</MarketValue>
       <Beauty>1</Beauty>
     </statBases>
+	<!--
     <ingestible>
-      <foodType>DendrovoreAnimal, Plant</foodType>
-      <preferability>DesperateOnlyForHumanlikes</preferability>
+		<foodType>DendrovoreAnimal, Plant</foodType>
+		<preferability>DesperateOnlyForHumanlikes</preferability>
+		<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		<showIngestFloatOption>false</showIngestFloatOption>
     </ingestible>
+	-->
     <pathCost>10</pathCost>
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
