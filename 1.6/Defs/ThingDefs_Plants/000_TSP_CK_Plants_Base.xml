@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="TSP_CK_TropicalPlant_Base" ParentName="PlantBaseNonEdible" Abstract="True">
+  <ThingDef Name="TSP_CK_TropicalPlant_Base" ParentName="BushBase" Abstract="True">
     <pathCost>10</pathCost>
     <blockWind>false</blockWind>
     <statBases>
