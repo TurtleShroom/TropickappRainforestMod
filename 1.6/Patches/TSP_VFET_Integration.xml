@@ -10,7 +10,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="TSP_CK_TropicalCrop_Base"]/plant/sowResearchPrerequisites</xpath>
           <value>
-			<sowResearchPrerequisites>
+			<sowResearchPrerequisites Inherit="False">
 				<li>VFET_Agriculture</li>
 			</sowResearchPrerequisites>
           </value>
@@ -18,7 +18,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="CK_SpecialTreeApiary"]/plant/sowResearchPrerequisites</xpath>
           <value>
-			<sowResearchPrerequisites>
+			<sowResearchPrerequisites Inherit="False">
 				<li>VFET_Agriculture</li>
 			</sowResearchPrerequisites>
           </value>

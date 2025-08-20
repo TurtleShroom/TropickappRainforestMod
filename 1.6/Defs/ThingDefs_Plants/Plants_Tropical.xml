@@ -20,9 +20,9 @@
     <pathCost>200</pathCost>
     <statBases>
       <Mass>42</Mass>
-      <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">0.88</Mashed_Ashlands_AshResistance>
+      <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_AshResistance>
       <MaxHitPoints>1300</MaxHitPoints>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
       <!-- <Nutrition>2</Nutrition> -->
     </statBases>
 	<!--
@@ -31,7 +31,7 @@
       <preferability>NeverForNutrition</preferability>
     </ingestible>
 	-->
-    <plant>
+    <plant Inherit="False">
       <leaflessGraphicPath>Things/Plant/TreeHive/TreeHive_Leafless</leaflessGraphicPath>
       <growDays>31</growDays>
       <harvestWork>1200</harvestWork>
@@ -49,6 +49,8 @@
       <interferesWithRoof>false</interferesWithRoof>
       <wildClusterRadius>20</wildClusterRadius>
       <visualSizeRange>2.37~2.4</visualSizeRange>
+	  <diesToLight>false</diesToLight>
+	  <pollution>Any</pollution>
       <sowTags Inherit="False">
       </sowTags>
       <!-- Only spawns, cannot be grown, Apiary is grown version -->
@@ -101,7 +103,7 @@
 				
 				<Grasslands MayRequire="Ludeon.RimWorld.Odyssey">0.008</Grasslands>
 				
-				<LavaField MayRequire="Ludeon.RimWorld.Odyssey">0.001</LavaField>
+				<LavaField MayRequire="Ludeon.RimWorld.Odyssey">0.008</LavaField>
 				
 				<Scarlands MayRequire="Ludeon.RimWorld.Odyssey">0.001</Scarlands> <!-- Nuclear weapons fallout zone -->
 
@@ -985,6 +987,8 @@
         <max>2</max>
       </wildClusterSizeRange> -->
       <wildClusterRadius>8</wildClusterRadius>
+	  <pollution>Any</pollution>
+	  <diesToLight>false</diesToLight>
     </plant>
   </ThingDef>
   <ThingDef ParentName="TSP_CK_TropicalPlant_Base">
@@ -1577,7 +1581,7 @@
     <statBases>
       <MaxHitPoints>10000</MaxHitPoints>
       <Beauty>0</Beauty>
-      <Flammability>3</Flammability>
+      <Flammability>0.99</Flammability>
       <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_AshResistance>
       <FoodPoisonChance>0.5</FoodPoisonChance>
       <FoodPoisonChanceFixedHuman>0.51</FoodPoisonChanceFixedHuman>
@@ -1602,10 +1606,8 @@
       <harvestYield>35</harvestYield>
       <harvestedThingDef>WoodLog</harvestedThingDef>
       <harvestMinGrowth>0</harvestMinGrowth>
-      <harvestAfterGrowth IsNull="True">
-      </harvestAfterGrowth>
-      <sowTags Inherit="False">
-      </sowTags>
+      <harvestAfterGrowth IsNull="True"></harvestAfterGrowth>
+      <sowTags Inherit="False"></sowTags>
       <!-- Cannot sow -->
       <neverBlightable>true</neverBlightable>
       <interferesWithRoof>false</interferesWithRoof>

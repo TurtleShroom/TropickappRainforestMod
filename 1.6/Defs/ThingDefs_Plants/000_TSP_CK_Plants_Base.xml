@@ -5,9 +5,9 @@
     <blockWind>false</blockWind>
     <statBases>
       <Mass>200</Mass>
-      <MarketValue>0</MarketValue>
+      <MarketValue>0.01</MarketValue>
       <Beauty>4</Beauty>
-      <!-- <Nutrition>2</Nutrition> -->
+      <Nutrition>2</Nutrition>
     </statBases>
 	<!--
     <ingestible>
@@ -19,6 +19,7 @@
 	-->
     <passability>Standable</passability>
     <selectable>true</selectable>
+	<socialPropernessMatters>false</socialPropernessMatters>
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <mustBeWildToSow>false</mustBeWildToSow>
@@ -28,7 +29,7 @@
       <sowTags>
         <!-- <li>Ground</li> -->
       </sowTags>
-      <wildBiomes>
+      <wildBiomes Inherit="False">
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
 
@@ -421,7 +422,7 @@
   <ThingDef Name="TSP_CK_TropicalCrop_Base" ParentName="TSP_CK_TropicalPlant_Base" Abstract="True">
     <statBases>
       <Mass>1</Mass>
-      <!-- <Nutrition>2</Nutrition> -->
+      <Nutrition>2</Nutrition>
       <MarketValue>1</MarketValue>
       <Beauty>1</Beauty>
     </statBases>
@@ -433,7 +434,7 @@
 		<showIngestFloatOption>false</showIngestFloatOption>
     </ingestible>
 	-->
-    <pathCost>10</pathCost>
+    <pathCost>1</pathCost>
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <mustBeWildToSow>false</mustBeWildToSow>
