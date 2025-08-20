@@ -4,25 +4,25 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]</xpath>
       </li>
       <li Class="PatchOperationReplace">
         <!-- Changes to Animal Density for Tropical Rainforest -->
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/animalDensity</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/animalDensity</xpath>
         <value>
           <animalDensity>6.0</animalDensity>
         </value>
       </li>
       <li Class="PatchOperationReplace">
         <!-- Changes to Plant Density for TropicalRainforest Biome -->
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/plantDensity</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/plantDensity</xpath>
         <value>
           <plantDensity>3.0</plantDensity>
         </value>
       </li>
       <li Class="PatchOperationReplace">
         <!-- Changes to weather for TropicalRainforest Biome -->
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/baseWeatherCommonalities</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/baseWeatherCommonalities</xpath>
         <value>
           <baseWeatherCommonalities>
             <Clear>1</Clear>
@@ -39,7 +39,7 @@
 	  <!--
       <li Class="PatchOperationAdd">
         Adding new plants to TropicalRainforest Biome
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
         <value>
           <CK_PlantFern>5</CK_PlantFern>
           <CK_PlantTreePalm>1.8</CK_PlantTreePalm>
@@ -68,7 +68,7 @@
 	  <!--
       <li Class="PatchOperationAdd">
         Adding new Animals to TropicalRainforest Biome
-        <xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildAnimals</xpath>
+        <xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildAnimals</xpath>
         <value>
           <CK_Tapir>1.6</CK_Tapir>
           <CK_Okapi>1.3</CK_Okapi>
@@ -86,10 +86,10 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_ShrubLow</xpath>
+		<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_ShrubLow</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_ShrubLow</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_ShrubLow</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_ShrubLow>1</Plant_ShrubLow>
@@ -97,7 +97,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_ShrubLow>1</Plant_ShrubLow>
@@ -107,10 +107,10 @@
   
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_Grass</xpath>
+		<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_Grass</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_Grass</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_Grass</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_Grass>0.5</Plant_Grass>
@@ -118,7 +118,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_Grass>0.5</Plant_Grass>
@@ -128,10 +128,10 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_TallGrass</xpath>
+		<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_TallGrass</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_TallGrass</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/wildPlants/Plant_TallGrass</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_TallGrass>1</Plant_TallGrass>
@@ -139,7 +139,7 @@
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/BiomeDef[defName = "TropicalArchipelago"]/Plant_TallGrass</xpath>
+			<xpath>Defs/BiomeDef[defName = "TropicalArchipelago"]/Plant_TallGrass</xpath>
 			<success>Always</success>
 			<value>
 				<Plant_TallGrass>1</Plant_TallGrass>

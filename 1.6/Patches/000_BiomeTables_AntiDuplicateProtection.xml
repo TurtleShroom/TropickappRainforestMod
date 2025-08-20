@@ -3,291 +3,291 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantPottedFern</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantPottedFern</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantPottedFern</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantPottedFern</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantPottedBromeliad</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantPottedBromeliad</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantPottedBromeliad</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantPottedBromeliad</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTaro</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTaro</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTaro</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTaro</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantJitterWeed</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantJitterWeed</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantJitterWeed</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantJitterWeed</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantLemongrass</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantLemongrass</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantLemongrass</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantLemongrass</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeCoconutPalm</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeBanana</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeBanana</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeBanana</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeBanana</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBushDreamVine</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantBushDreamVine</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBushDreamVine</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantBushDreamVine</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBushPalm</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantBushPalm</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBushPalm</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantBushPalm</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeHive</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_SpecialTreeApiary</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildTaro</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildTaro</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildTaro</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildTaro</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildJitterWeed</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildJitterWeed</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildJitterWeed</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildJitterWeed</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildBushDreamVine</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildBushDreamVine</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildBushDreamVine</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildBushDreamVine</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantFern</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantFern</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantFern</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantFern</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantRafflesia</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantRafflesia</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantRafflesia</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantRafflesia</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBromeliad</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantBromeliad</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantBromeliad</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantBromeliad</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantHeliconia</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantHeliconia</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantHeliconia</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantHeliconia</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildLemongrass</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildLemongrass</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantWildLemongrass</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantWildLemongrass</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeMahogany</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeMahogany</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeMahogany</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeMahogany</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreePalm</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreePalm</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreePalm</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreePalm</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeWildCoconutPalm</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeWildCoconutPalm</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeWildCoconutPalm</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeWildCoconutPalm</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeStranglerFig</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeStranglerFig</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeStranglerFig</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeStranglerFig</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeTreeStump</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeTreeStump</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeTreeStump</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeTreeStump</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeWildBanana</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeWildBanana</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeWildBanana</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeWildBanana</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeBamboo</xpath>
+    <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeBamboo</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/BiomeDef/wildPlants/CK_PlantTreeBamboo</xpath>
+      <xpath>Defs/BiomeDef/wildPlants/CK_PlantTreeBamboo</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>

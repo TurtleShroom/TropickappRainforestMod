@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/BiomeDef[defName="HSBambooForest"]</xpath>
+    <xpath>Defs/BiomeDef[defName="HSBambooForest"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationSequence">
       <operations>
         <!--
 			  <li Class="PatchOperationTest">
-				<xpath>/Defs/BiomeDef[defName = "HSBambooForest"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "HSBambooForest"]</xpath>
 			  </li>
 			  -->
         <li Class="PatchOperationReplace">
           <!-- Changes to Animal Density for Tropical Rainforest -->
-          <xpath>/Defs/BiomeDef[defName = "HSBambooForest"]/animalDensity</xpath>
+          <xpath>Defs/BiomeDef[defName = "HSBambooForest"]/animalDensity</xpath>
           <value>
             <animalDensity>2.5</animalDensity>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <!-- Changes to Plant Density for TropicalRainforest Biome -->
-          <xpath>/Defs/BiomeDef[defName = "HSBambooForest"]/plantDensity</xpath>
+          <xpath>Defs/BiomeDef[defName = "HSBambooForest"]/plantDensity</xpath>
           <value>
             <plantDensity>2</plantDensity>
           </value>
@@ -27,7 +27,7 @@
 		<!--
         <li Class="PatchOperationAdd">
           Adding new plants to TropicalRainforest Biome
-          <xpath>/Defs/BiomeDef[defName = "HSBambooForest"]/wildPlants</xpath>
+          <xpath>Defs/BiomeDef[defName = "HSBambooForest"]/wildPlants</xpath>
           <value>
             <CK_PlantFern>1</CK_PlantFern>
             <CK_PlantTreePalm>0.1</CK_PlantTreePalm>
@@ -47,7 +47,7 @@
         </li>
         <li Class="PatchOperationAdd">
           Adding new Animals to TropicalRainforest Biome
-          <xpath>/Defs/BiomeDef[defName = "HSBambooForest"]/wildAnimals</xpath>
+          <xpath>Defs/BiomeDef[defName = "HSBambooForest"]/wildAnimals</xpath>
           <value>
             <CK_Tapir>0.4</CK_Tapir>
             <CK_Junglefowl>0.01</CK_Junglefowl>

@@ -2,33 +2,33 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/BiomeDef[defName="BiomeGRimberlands"]</xpath>
+		<xpath>Defs/BiomeDef[defName="BiomeGRimberlands"]</xpath>
 		<!-- <success>Always</success> -->
 		<!-- If it does, LET'S FASTING GOOOOO! -->
 		<match Class="PatchOperationSequence">
 			<operations>
 				<!--
 				<li Class="PatchOperationTest">
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimberlands"]</xpath>
 				</li>
 				-->
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimberlands"]/animalDensity</xpath>
 					<value>
 						<animalDensity>2.5</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimberlands"]/plantDensity</xpath>
 					<value>
 						<plantDensity>2.5</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimberlands"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimberlands"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>1</Clear>
@@ -49,21 +49,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimerald"]/animalDensity</xpath>
 					<value>
 						<animalDensity>1</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimerald"]/plantDensity</xpath>
 					<value>
 						<plantDensity>2.75</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimerald"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimerald"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>1</Clear>
@@ -84,21 +84,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimethyst"]/animalDensity</xpath>
 					<value>
 						<animalDensity>5</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimethyst"]/plantDensity</xpath>
 					<value>
 						<plantDensity>3</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimethyst"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimethyst"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>1</Clear>
@@ -119,21 +119,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimonade"]/animalDensity</xpath>
 					<value>
 						<animalDensity>1.5</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimonade"]/plantDensity</xpath>
 					<value>
 						<plantDensity>1.25</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimonade"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimonade"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>20</Clear>
@@ -154,21 +154,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimond"]/animalDensity</xpath>
 					<value>
 						<animalDensity>0.5</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimond"]/plantDensity</xpath>
 					<value>
 						<plantDensity>0.33</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimond"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimond"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>75</Clear>
@@ -189,21 +189,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimphire"]/animalDensity</xpath>
 					<value>
 						<animalDensity>1</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimphire"]/plantDensity</xpath>
 					<value>
 						<plantDensity>2</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimphire"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimphire"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>7</Clear>
@@ -225,21 +225,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimworld"]/animalDensity</xpath>
 					<value>
 						<animalDensity>0.31</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
 					<value>
 						<plantDensity>0.2</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimworld"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>1</Clear>
@@ -262,21 +262,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRuby"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRuby"]/animalDensity</xpath>
 					<value>
 						<animalDensity>3</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for BiomeGRuby Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRimworld"]/plantDensity</xpath>
 					<value>
 						<plantDensity>3</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRuby"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRuby"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>6</Clear>
@@ -302,21 +302,21 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Animal Density for Tropical Rainforest -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/animalDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRuquoise"]/animalDensity</xpath>
 					<value>
 						<animalDensity>4</animalDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<!-- Changes to Plant Density for BiomeGRuby Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/plantDensity</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRuquoise"]/plantDensity</xpath>
 					<value>
 						<plantDensity>1</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 				<!-- Changes to weather for TropicalRainforest Biome -->
-					<xpath>/Defs/BiomeDef[defName = "BiomeGRuquoise"]/baseWeatherCommonalities</xpath>
+					<xpath>Defs/BiomeDef[defName = "BiomeGRuquoise"]/baseWeatherCommonalities</xpath>
 					<value>
 						<baseWeatherCommonalities>
 							<Clear>25</Clear>

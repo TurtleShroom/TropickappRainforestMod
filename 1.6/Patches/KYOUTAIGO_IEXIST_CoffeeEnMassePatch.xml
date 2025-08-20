@@ -3,13 +3,13 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VBE_RawCoffee"]</xpath>
+    <xpath>Defs/ThingDef[defName="VBE_RawCoffee"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -18,7 +18,7 @@
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -27,7 +27,7 @@
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VBE_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -40,13 +40,13 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="scar_RawCoffee"]</xpath>
+    <xpath>Defs/ThingDef[defName="scar_RawCoffee"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -55,7 +55,7 @@
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -64,7 +64,7 @@
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="scar_RawCoffee"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="TSP.Isengriff.Storytime">ST_Bean</li>
@@ -77,27 +77,27 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="ST_Bean"]</xpath>
+    <xpath>Defs/ThingDef[defName="ST_Bean"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="ST_Bean"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="ST_Bean"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="ST_Bean"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="ST_Bean"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="ST_Bean"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="ST_Bean"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>
@@ -108,27 +108,27 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="KIT_Beans"]</xpath>
+    <xpath>Defs/ThingDef[defName="KIT_Beans"]</xpath>
     <!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
     <match Class="PatchOperationSequence">
       <!-- <success>Always</success> -->
       <operations>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="KIT_Beans"]</xpath>
+          <xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="KIT_Beans"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="KIT_Beans"]</xpath>
+          <xpath>Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="KIT_Beans"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>
           </value>
         </li>
         <li Class="PatchOperationInsert">
-          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="KIT_Beans"]</xpath>
+          <xpath>Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="KIT_Beans"]</xpath>
           <success>Always</success>
           <value>
             <li MayRequire="mlie.tropickapprainforestmod">CK_RawJitterBerries</li>

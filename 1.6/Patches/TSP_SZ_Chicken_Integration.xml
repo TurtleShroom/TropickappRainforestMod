@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="TuJi"]</xpath>
+    <xpath>Defs/ThingDef[defName="TuJi"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="CK_Junglefowl"]/race/leatherDef</xpath>
@@ -15,7 +15,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="TuJi"]</xpath>
+    <xpath>Defs/ThingDef[defName="TuJi"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="CK_Junglefowl"]/race/useMeatFrom</xpath>
@@ -28,7 +28,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="TuJi"]/race/leatherDef</xpath>
+    <xpath>Defs/ThingDef[defName="TuJi"]/race/leatherDef</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="TuJi"]/race/leatherDef</xpath>
@@ -49,7 +49,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="TuJi"]/race/useMeatFrom</xpath>
+    <xpath>Defs/ThingDef[defName="TuJi"]/race/useMeatFrom</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="TuJi"]/race/useMeatFrom</xpath>

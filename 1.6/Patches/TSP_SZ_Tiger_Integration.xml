@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Leather_DongBeiHu"]</xpath>
+    <xpath>Defs/ThingDef[defName="Leather_DongBeiHu"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="CK_Tiger"]/race/leatherDef</xpath>
@@ -15,7 +15,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="LaoHu_HuaNan"]/race/useMeatFrom</xpath>
+    <xpath>Defs/ThingDef[defName="LaoHu_HuaNan"]/race/useMeatFrom</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="LaoHu_HuaNan"]/race/useMeatFrom</xpath>
@@ -36,7 +36,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="LaoHu_Bai"]/race/leatherDef</xpath>
+    <xpath>Defs/ThingDef[defName="LaoHu_Bai"]/race/leatherDef</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="LaoHu_Bai"]/race/leatherDef</xpath>
@@ -57,7 +57,7 @@
   </Operation>
  <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="LaoHu_Bai"]/race/useMeatFrom</xpath>
+    <xpath>Defs/ThingDef[defName="LaoHu_Bai"]/race/useMeatFrom</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="LaoHu_Bai"]/race/useMeatFrom</xpath>
@@ -78,7 +78,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="LaoHu_Bai"]/race/leatherDef</xpath>
+    <xpath>Defs/ThingDef[defName="LaoHu_Bai"]/race/leatherDef</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="Tiger"]/race/leatherDef</xpath>
@@ -91,17 +91,17 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/ThingDef[defName="Leather_DongBeiHu"]</xpath>
+    <xpath>Defs/ThingDef[defName="Leather_DongBeiHu"]</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="CK_LeatherTiger"]</xpath>
+      <xpath>Defs/ThingDef[defName="CK_LeatherTiger"]</xpath>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="LaoHu_HuaNan"]/race/meatLabel</xpath>
+    <xpath>Defs/ThingDef[defName="LaoHu_HuaNan"]/race/meatLabel</xpath>
     <!-- If it DOES NOT, do this add. -->
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="LaoHu_HuaNan"]/race</xpath>
@@ -114,10 +114,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Leather_DongBeiHu"]/label</xpath>
+    <xpath>Defs/ThingDef[defName="Leather_DongBeiHu"]/label</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
-      <xpath>/Defs/ThingDef[defName="Leather_DongBeiHu"]/label</xpath>
+      <xpath>Defs/ThingDef[defName="Leather_DongBeiHu"]/label</xpath>
       <success>Always</success>
       <value>
         <label>tiger hide</label>
