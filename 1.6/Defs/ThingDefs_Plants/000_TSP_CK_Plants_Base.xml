@@ -319,7 +319,7 @@
 				<!-- needler98.dune -->
 				<!-- SPICE ZONE (DUNE) -->
 				
-				<SpiceDesert MayRequire="comigogames.biomes.greaterswamps">0.02</SpiceDesert>
+				<SpiceDesert MayRequire="needler98.dune">0.02</SpiceDesert>
 				
 				
 				<!-- _________________ -->

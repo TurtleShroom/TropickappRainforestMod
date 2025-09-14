@@ -61,6 +61,9 @@
 	<li>tsp.velcroboy333.medievalfestival.banquet</li>
 	<li>tsp.girlbominations</li>
   </loadBefore>
+  <incompatibleWith>
+	<li>kittahkhan.grazeup</li>
+  </incompatibleWith>
   <description>[H1]TurtleShroom Productions Proudly Presents: CKAPP Tropical Rainforest Mod (Continued)[/H1]
   
   Thank you for downloading the continuation of the CKAPP Tropical Rainforest Mod. It is my privilege to, with Mlie's encouragement, take another load off his shoulders and continue the ambitious project of bringing one of "Rimworld's" best Biome balance changing Mods back to the RW Steam Workshop. This Mod causes the Tropical Rainforest (and many other tropical Biomes) to be dense in vegetation and teeming with animal life. It greatly increases the amount and types of animals.
