@@ -35,7 +35,7 @@
               <RainyThunderstorm>15</RainyThunderstorm>
               <FoggyRain>12</FoggyRain>
               <SnowGentle>1</SnowGentle>
-			  <RG_Monsoon MayRequire="regrowth.botr.core">30</RG_Monsoon>
+			  <!-- <RG_Monsoon MayRequire="regrowth.botr.core">30</RG_Monsoon> -->
 			  <TorrentialRain MayRequire="ludeon.rimworld.odyssey">10</TorrentialRain>
             </baseWeatherCommonalities>
           </value>

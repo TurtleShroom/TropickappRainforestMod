@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_RafflesiaLeaves"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>VFEM2_RafflesiaLeaves</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>VFEM2_RafflesiaLeaves</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="PoisonRafflesia"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="PoisonRafflesia"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="PoisonRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>VFEM2_RafflesiaLeaves</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="PoisonRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="Plant_NightRafflesia"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="Plant_NightRafflesia"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="Plant_NightRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>VFEM2_RafflesiaLeaves</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="Plant_NightRafflesia"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>50</harvestYield>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="hs_Edo_Bamboo"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeBamboo"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeBamboo"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeBamboo"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeBamboo"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>60</harvestYield>
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="BMT_ThicketBamboo"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="BMT_ThicketBamboo"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="BMT_ThicketBamboo"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="BMT_ThicketBamboo"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="HSPlant_SingleBambooTree"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="HSPlant_SingleBambooTree"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="HSPlant_SingleBambooTree"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="HSPlant_SingleBambooTree"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>25</harvestYield>
+					</value>
+				</li>
+				
+				
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="HSPlant_TallBambooTree"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="HSPlant_TallBambooTree"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="HSPlant_TallBambooTree"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="HSPlant_TallBambooTree"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>80</harvestYield>
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>45</harvestYield>
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="LGC_Plant_BambooShoot"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>45</harvestYield>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="LGC_BigBambooShoot"]/costList</xpath>
+					<success>Always</success>
+					<value>
+						<hs_Edo_Bamboo MayRequire="heis.edo.themed.expansion">200</hs_Edo_Bamboo>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="LGC_BigBambooShoot"]/killedLeavings</xpath>
+					<success>Always</success>
+					<value>
+						<hs_Edo_Bamboo MayRequire="heis.edo.themed.expansion">200</hs_Edo_Bamboo>
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="GRim1BambooBush"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="GRim1BambooBush"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GRim1BambooBush"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GRim1BambooBush"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="GRimBambooBush"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="GRimBambooBush"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GRimBambooBush"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>hs_Edo_Bamboo</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GRimBambooBush"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>75</harvestYield>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VV_Mahogany"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeMahogany"]/plant/harvestedThingDef</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeMahogany"]/plant/harvestYield</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeMahogany"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestedThingDef>VV_Mahogany</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="CK_PlantTreeMahogany"]/plant</xpath>
+					<success>Always</success>
+					<value>
+						<harvestYield>105</harvestYield>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

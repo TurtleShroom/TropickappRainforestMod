@@ -4,7 +4,7 @@
   <ThingDef ParentName="TSP_CK_MiscAnimal_Base">
     <defName>CK_KomodoDragon</defName>
     <label>Komodo Dragon</label>
-    <description>Also known as the monitor lizard, this is a large species of lizard found in Indonesian islands on old Earth. Komodo dragon group behaviour in hunting is exceptional in the reptile world./nAs a result of their size, these lizards dominated the ecosystems in which they lived. The diet of the Komodo dragon mainly consists of deer, though they also eat considerable amounts of carrion. Komodo dragons also occasionally attack humans.</description>
+    <description>Komodo dragons are the largest known type of monitor lizard, in Indonesian islands on old Earth. Komodo dragon group behaviour in hunting is exceptional in the reptile world./nAs a result of their size, these lizards dominated the ecosystems in which they lived. The diet of the Komodo dragon mainly consists of deer, though they also eat considerable amounts of carrion. Komodo dragons also occasionally attack humans.</description>
     <statBases>
       <MoveSpeed>4.23</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -451,6 +451,18 @@
 				<BiomeGRuby MayRequire="grimterra.biomesmod">0.1</BiomeGRuby> <!-- Forever Forest -->
 				
 				<BiomeGRuquoise MayRequire="grimterra.biomesmod">0.01</BiomeGRuquoise> <!-- Graze Lands -->
+				
+				<BiomeArcticOasis MayRequire="grimterra.biomesmod">0</BiomeArcticOasis> <!-- Arctic Oasis -->
+				
+				<BiomeAreeb MayRequire="grimterra.biomesmod">0.1</BiomeAreeb> <!-- Areeb Semi-Arid Land -->
+				
+				<BiomeCypreJungle MayRequire="grimterra.biomesmod">0.01</BiomeCypreJungle> <!-- Overgrown Cypre Jungle -->
+				
+				<BiomeMist MayRequire="grimterra.biomesmod">0</BiomeMist> <!-- Dead Wasteland -->
+				
+				<BiomeToxlands MayRequire="grimterra.biomesmod">0</BiomeToxlands> <!-- Toxic Waste Fields -->
+				
+				<BiomeGrindland MayRequire="grimterra.biomesmod">0.01</BiomeGrindland> <!-- Geode Crystal Zone -->
 				
 				
 				
