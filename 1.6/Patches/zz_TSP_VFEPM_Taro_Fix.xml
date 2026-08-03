@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>Defs/ThingDef[defName="CK_RawTaro"]</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<success>Always</success>
+			<value>
+				<ThingDef ParentName="BaseFilth">
+					<defName>CK_RawTaro</defName>
+					<label>CK Raw Taro (ERROR)</label>
+					<category>Filth</category>
+					<description>If is ever encountered in the game as an item, you are seeing an error. Please report it to TurtleShroom.</description>
+					<graphicData>
+						<texPath>Things/Plant/Taro</texPath>
+						<graphicClass>Graphic_Random</graphicClass>
+					</graphicData>
+					<altitudeLayer>Filth</altitudeLayer>
+					<selectable>true</selectable>
+					<statBases>
+						<Flammability>0</Flammability>
+					</statBases>
+					<filth Inherit="False">
+						<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+						<disappearsInDays>0.001~0.05</disappearsInDays>
+						<rainWashes>true</rainWashes>
+						<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+						<canFilthAttach>false</canFilthAttach>
+						<cleaningSound Inherit="False">Vomit</cleaningSound>
+					</filth>
+				</ThingDef>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does exist, the original code stands. -->
+	</Operation>
+</Patch>
